@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MELSecondViewController : UIViewController
+@interface MELSecondViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+    NSArray *dataArray;
+}
+
+
+@property (nonatomic,retain) UITableView *musicList;
 
 @end

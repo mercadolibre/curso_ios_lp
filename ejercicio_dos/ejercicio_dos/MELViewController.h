@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MELViewController : UIViewController
+@interface MELViewController : UIViewController 
 
 @property (weak, nonatomic) IBOutlet UITextField *textToSendToAlert;
 
