@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8C52B2BE-0935-418A-996F-5B86D66CF166</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ejercicio_dos</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C4A600BC-9703-419F-8252-3573C0238256</key>
+		<string>https://github.com/mercadolibre/curso_ios_lp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ejercicio_dos/ejercicio_dos.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C4A600BC-9703-419F-8252-3573C0238256</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mercadolibre/curso_ios_lp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C4A600BC-9703-419F-8252-3573C0238256</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C4A600BC-9703-419F-8252-3573C0238256</string>
+			<key>IDESourceControlWCCName</key>
+			<string>curso-ios-lp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

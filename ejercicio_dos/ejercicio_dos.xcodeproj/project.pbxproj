@@ -19,6 +19,10 @@
 		A734E5841902D6680056637A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A734E56C1902D6680056637A /* UIKit.framework */; };
 		A734E58C1902D6680056637A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A734E58A1902D6680056637A /* InfoPlist.strings */; };
 		A734E58E1902D6680056637A /* ejercicio_dosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A734E58D1902D6680056637A /* ejercicio_dosTests.m */; };
+		A79332F9190369B1003B7654 /* MELViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79332F7190369B1003B7654 /* MELViewController.m */; };
+		A79332FA190369B1003B7654 /* MELViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A79332F8190369B1003B7654 /* MELViewController.xib */; };
+		A793330419038960003B7654 /* MELSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A793330219038960003B7654 /* MELSecondViewController.m */; };
+		A793330519038960003B7654 /* MELSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A793330319038960003B7654 /* MELSecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		A734E5891902D6680056637A /* ejercicio_dosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ejercicio_dosTests-Info.plist"; sourceTree = "<group>"; };
 		A734E58B1902D6680056637A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A734E58D1902D6680056637A /* ejercicio_dosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ejercicio_dosTests.m; sourceTree = "<group>"; };
+		A79332F6190369B1003B7654 /* MELViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MELViewController.h; path = ejercicio_dos/MELViewController.h; sourceTree = "<group>"; };
+		A79332F7190369B1003B7654 /* MELViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MELViewController.m; path = ejercicio_dos/MELViewController.m; sourceTree = "<group>"; };
+		A79332F8190369B1003B7654 /* MELViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MELViewController.xib; path = ejercicio_dos/MELViewController.xib; sourceTree = "<group>"; };
+		A793330119038960003B7654 /* MELSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MELSecondViewController.h; path = ejercicio_dos/MELSecondViewController.h; sourceTree = "<group>"; };
+		A793330219038960003B7654 /* MELSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MELSecondViewController.m; path = ejercicio_dos/MELSecondViewController.m; sourceTree = "<group>"; };
+		A793330319038960003B7654 /* MELSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MELSecondViewController.xib; path = ejercicio_dos/MELSecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,12 @@
 		A734E55C1902D6680056637A = {
 			isa = PBXGroup;
 			children = (
+				A793330119038960003B7654 /* MELSecondViewController.h */,
+				A793330219038960003B7654 /* MELSecondViewController.m */,
+				A793330319038960003B7654 /* MELSecondViewController.xib */,
+				A79332F6190369B1003B7654 /* MELViewController.h */,
+				A79332F7190369B1003B7654 /* MELViewController.m */,
+				A79332F8190369B1003B7654 /* MELViewController.xib */,
 				A734E56E1902D6680056637A /* ejercicio_dos */,
 				A734E5871902D6680056637A /* ejercicio_dosTests */,
 				A734E5671902D6680056637A /* Frameworks */,
@@ -220,6 +236,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79332FA190369B1003B7654 /* MELViewController.xib in Resources */,
+				A793330519038960003B7654 /* MELSecondViewController.xib in Resources */,
 				A734E5731902D6680056637A /* InfoPlist.strings in Resources */,
 				A734E57B1902D6680056637A /* Images.xcassets in Resources */,
 			);
@@ -241,7 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A734E5751902D6680056637A /* main.m in Sources */,
+				A793330419038960003B7654 /* MELSecondViewController.m in Sources */,
 				A734E5791902D6680056637A /* MELAppDelegate.m in Sources */,
+				A79332F9190369B1003B7654 /* MELViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +458,7 @@
 				A734E5931902D6680056637A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A734E5941902D6680056637A /* Build configuration list for PBXNativeTarget "ejercicio_dosTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +467,7 @@
 				A734E5961902D6680056637A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
