@@ -84,7 +84,7 @@
 {
     NSArray *musicArray =[NSArray arrayWithObjects:@"the one that got away", @"you make me", @"wake me up", nil];
     
-    /*NSMutableDictionary *musicDictionary = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+    NSMutableDictionary *musicDictionary = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                             @"danceMusic", musicArray,
                                             nil];
     NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"league" ofType:@"plist"];
@@ -94,8 +94,8 @@
     plistPath = [[NSBundle mainBundle] pathForResource:@"league" ofType:@"plist"];
     NSArray *contentArray = [NSArray arrayWithContentsOfFile:plistPath];
     
-    return contentArray;*/
-    return musicArray;
+    return contentArray;
+
 }
 
 
