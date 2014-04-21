@@ -31,7 +31,7 @@
     dataArray = [self returnTableContent];
 
     self.musicList = [self makeMusicList];
-    [self.musicList registerClass:[UITableViewCell class] forCellReuseIdentifier:@"newFriendCell"];
+    //[self.musicList registerClass:[UITableViewCell class] forCellReuseIdentifier:@"newFriendCell"];
     [self.view addSubview:self.musicList];
 
 }
@@ -48,7 +48,9 @@
 - (UITableViewCell *) tableView: (UITableView *) musicList cellForRowAtIndexPath: (NSIndexPath *) indexPah{
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [self.musicList dequeueReusableCellWithIdentifier:CellIdentifier];
-
+    if(!cell){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
     cell.textLabel.text = [dataArray objectAtIndex:indexPah.row];
 
     return cell;
@@ -74,7 +76,7 @@
     musicList.bounces = YES;
     
     musicList.delegate = self;
-    musicList.dataSource; // = self; //[self returnTableContent];
+    musicList.dataSource = self; //[self returnTableContent];
     
     return musicList;
 }
@@ -84,7 +86,7 @@
 {
     NSArray *musicArray =[NSArray arrayWithObjects:@"the one that got away", @"you make me", @"wake me up", nil];
     
-    NSMutableDictionary *musicDictionary = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+    /*NSMutableDictionary *musicDictionary = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                             @"danceMusic", musicArray,
                                             nil];
     NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"league" ofType:@"plist"];
@@ -94,7 +96,8 @@
     plistPath = [[NSBundle mainBundle] pathForResource:@"league" ofType:@"plist"];
     NSArray *contentArray = [NSArray arrayWithContentsOfFile:plistPath];
     
-    return contentArray;
+    return contentArray;*/
+    return musicArray;
 
 }
 
