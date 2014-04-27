@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A72669DE1905BC1600F3D623 /* music_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = A72669DD1905BC1600F3D623 /* music_list.plist */; };
 		A734E5691902D6680056637A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A734E5681902D6680056637A /* Foundation.framework */; };
 		A734E56B1902D6680056637A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A734E56A1902D6680056637A /* CoreGraphics.framework */; };
 		A734E56D1902D6680056637A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A734E56C1902D6680056637A /* UIKit.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A72669DD1905BC1600F3D623 /* music_list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = music_list.plist; sourceTree = "<group>"; };
 		A734E5651902D6680056637A /* ejercicio_dos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ejercicio_dos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A734E5681902D6680056637A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A734E56A1902D6680056637A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,6 +140,7 @@
 				A734E5711902D6680056637A /* InfoPlist.strings */,
 				A734E5741902D6680056637A /* main.m */,
 				A734E5761902D6680056637A /* ejercicio_dos-Prefix.pch */,
+				A72669DD1905BC1600F3D623 /* music_list.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				A793330519038960003B7654 /* MELSecondViewController.xib in Resources */,
 				A734E5731902D6680056637A /* InfoPlist.strings in Resources */,
 				A734E57B1902D6680056637A /* Images.xcassets in Resources */,
+				A72669DE1905BC1600F3D623 /* music_list.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
