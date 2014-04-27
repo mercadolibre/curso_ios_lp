@@ -7,6 +7,7 @@
 //
 
 #import "MELItemsViewController.h"
+#import "MELViewController.h"
 
 @interface MELItemsViewController ()
 
@@ -85,34 +86,35 @@
 
 - (NSArray *)returnTableContent
 {
-    NSArray *musicArray =[NSArray arrayWithObjects:@"the one that got away", @"you make me", @"wake me up", nil];
+    NSLog(@"%@", @"llegó a returnTableContent");
     
+    NSArray *results;
     
-    return musicArray;
     
     /*NSError *error;
     NSDictionary *allItems = [NSJSONSerialization
-                                JSONObjectWithData:MELViewController.buffer
-                                options:kNilOptions
-                                error:&error];
+                              JSONObjectWithData:MELViewController.dataDetailItem
+                              options:kNilOptions
+                              error:&error];
     
     if( error )
     {
         NSLog(@"%@", [error localizedDescription]);
     }
     else {
-        NSArray *results = allItems[@"results"];
-        for ( NSDictionary *theItem in results )
-        {
-            NSLog(@"----");
-            NSLog(@"Title: %@", theItem[@"title"] );
-            NSLog(@"Speaker: %@", theItem[@"speaker"] );
-            NSLog(@"Time: %@", theItem[@"time"] );
-            NSLog(@"Room: %@", theItem[@"room"] );
-            NSLog(@"Details: %@", theItem[@"details"] );
-            NSLog(@"----");
-        }
+        results = allItems[@"results"];*/
+        /*for ( NSDictionary *theItem in results )
+         {
+         NSLog(@"----");
+         NSLog(@"Title: %@", theItem[@"title"] );
+         NSLog(@"Price: %@", theItem[@"price"] );
+         NSLog(@"Image: %@", theItem[@"thumbnail"] );
+         NSLog(@"----");
+         }
     }*/
+    
+    //NSLog(@"%@", results);
+    return results;
     
 }
 

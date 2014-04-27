@@ -86,18 +86,18 @@
 {
     NSArray *musicArray =[NSArray arrayWithObjects:@"the one that got away", @"you make me", @"wake me up", nil];
     
-    NSMutableDictionary *musicDictionary = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+    /*NSMutableDictionary *musicDictionary = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                             @"danceMusic", musicArray,
-                                            nil];
+                                            nil];*/
     /*NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"league" ofType:@"plist"];
     [musicDictionary writeToFile:@"ejercicio_dos" atomically:YES];*/
     
     
-    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"ejercicio_dos" ofType:@"plist"];
+    /*NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"ejercicio_dos" ofType:@"plist"];
     NSArray *contentArray = [NSArray arrayWithContentsOfFile:plistPath];
     
-    return contentArray;
-    //return musicArray;
+    return contentArray;*/
+    return musicArray;
 
 }
 

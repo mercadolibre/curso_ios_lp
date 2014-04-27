@@ -7,7 +7,7 @@
 //
 
 #import "MELViewController.h"
-//#import "MELItemsViewController.h"
+#import "MELItemsViewController.h"
 
 @interface MELViewController ()
 
@@ -62,6 +62,7 @@
     if(!cell){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     }
     /*cell.textLabel.text = [dataArray objectAtIndex:indexPah.row];
     
@@ -101,6 +102,27 @@
     return cell;
 }
 
+//handler evet for UITableViewCellAccessoryDetailDisclosureButton
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%@", @"llegó a accessoryButtonTappedForRowWithIndexPath");
+    
+    /* inizialicing items list view*/
+    MELItemsViewController *itemsView = [[MELItemsViewController alloc] initWithNibName:nil                                              bundle:nil];
+    
+    /*set title inizialized view*/
+    NSString *searchTitleString = @"Searching ";
+     
+    NSString *itemString = self.inputItem.text;
+     
+    itemsView.title = [searchTitleString stringByAppendingString:itemString];
+    
+    /*pushing new view*/
+    [self.navigationController pushViewController:itemsView
+     animated:YES];
+
+}
+
 
 -(UITableView *)makeItemsTable
 {
@@ -129,11 +151,9 @@
 
 
 
-- (NSArray *)returnTableContent //devolvía NSArray
+- (NSArray *)returnTableContent
 {
     NSLog(@"%@", @"llegó a returnTableContent");
-    //NSArray *musicArray =[NSArray arrayWithObjects:@"the one that got away", @"you make me", @"wake me up", nil];
-    //return musicArray;
     
     NSArray *results;
     
@@ -169,20 +189,6 @@
 - (IBAction)findItem:(id)sender {
     /* disable the fetch button during the request */
     [self.findItem setEnabled:NO];
-    
-    /* inizialicing items list view*/
-     /*MELItemsViewController *itemsView = [[MELItemsViewController alloc] initWithNibName:nil                                              bundle:nil];*/
-    
-    /*set title inizialized view*/
-    /*NSString *searchTitleString = @"Searching ";
-    
-    NSString *itemString = self.inputItem.text;
-    
-    itemsView.title = [searchTitleString stringByAppendingString:itemString];*/
-    
-    /*pushing new view*/
-   /*[self.navigationController pushViewController:itemsView
-        animated:YES];*/
     
     /* begin animating the spinner */
     [self.loadingControl startAnimating];
@@ -248,6 +254,9 @@
 {
     /* Append data to the buffer */
     [self.buffer appendData:data];
+    
+    /* Append data to item view object*/
+    [dataDetailItem appendData: data];
 }
 
 

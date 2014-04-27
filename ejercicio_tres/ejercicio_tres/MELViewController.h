@@ -10,6 +10,7 @@
 
 @interface MELViewController : UIViewController <NSURLConnectionDataDelegate,UITableViewDataSource,UITableViewDelegate>{
     NSArray *dataArray;
+    NSMutableData *dataDetailItem;
 }
 
 
