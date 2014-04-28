@@ -62,7 +62,7 @@
     if(!cell){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     /*cell.textLabel.text = [dataArray objectAtIndex:indexPah.row];
     
